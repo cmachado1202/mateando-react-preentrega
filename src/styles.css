@@ -1,0 +1,61 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #273b32; background: #faf8f3; line-height: 1.6; }
+a { color: inherit; }
+.contenedor { width: min(1100px, 90%); margin: auto; }
+.header { background: white; border-bottom: 1px solid #e1e5dc; }
+.encabezado { display: flex; align-items: center; justify-content: space-between; min-height: 100px; gap: 24px; }
+.marca { font-family: Georgia, serif; font-size: 32px; font-weight: bold; text-decoration: none; line-height: 1.1; }
+.marca span { display: block; font-family: Arial, sans-serif; font-size: 12px; font-weight: normal; letter-spacing: 2px; margin-top: 8px; }
+nav { display: flex; gap: 26px; }
+nav a { text-decoration: none; padding: 8px 0; border-bottom: 2px solid transparent; }
+nav a[aria-current="page"] { border-color: #365346; font-weight: bold; }
+nav a:hover { color: #846138; }
+.seccion { padding: 48px 0 64px; min-height: 420px; }
+h1, h2, h3, h4 { line-height: 1.2; }
+h1 { font-family: Georgia, serif; font-size: clamp(30px, 4vw, 46px); margin: 12px 0 20px; }
+h2 { font-size: 25px; }
+.etiqueta, .categoria { text-transform: uppercase; letter-spacing: 1.8px; font-size: 12px; font-weight: bold; color: #637353; }
+.intro { margin-bottom: 28px; }
+.hero { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 50px; background: #e8eddc; padding: 44px; border-radius: 16px; }
+.hero p { max-width: 470px; }
+.hero img { width: 100%; height: auto; border-radius: 12px; }
+.boton { display: inline-block; background: #365346; color: white; padding: 12px 22px; border: 1px solid #365346; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 12px; }
+.boton:hover { background: #243a2e; }
+.secundario { background: transparent; color: #365346; }
+.secundario:hover { background: #e8eddc; }
+.presentacion { margin-top: 48px; }
+.beneficios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 24px; }
+.beneficios article { border-top: 2px solid #c8d2b9; }
+.filtros { display: flex; flex-wrap: wrap; gap: 10px; }
+.filtros button { font: inherit; border: 1px solid #a9b69c; background: white; color: #365346; border-radius: 20px; padding: 6px 20px; cursor: pointer; }
+.filtros button[aria-pressed="true"] { background: #365346; color: white; }
+.cantidad { font-size: 14px; color: #69746b; margin: 24px 0 12px; }
+.catalogo { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.tarjeta { background: white; border: 1px solid #e0e4da; border-radius: 12px; overflow: hidden; }
+.tarjeta img { width: 100%; height: 220px; object-fit: cover; background: #eee9de; }
+.tarjeta-info { padding: 22px; }
+.tarjeta h2 { font-size: 21px; margin: 10px 0; }
+.tarjeta p { color: #637066; min-height: 52px; font-size: 14px; }
+.precio { display: block; font-size: 24px; font-weight: bold; margin: 14px 0; }
+.tarjeta .boton { display: block; text-align: center; }
+.volver { display: inline-block; margin-bottom: 30px; }
+.detalle { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.detalle img { width: 100%; height: auto; border-radius: 12px; }
+.detalle h2 { font-size: 20px; margin-top: 28px; }
+.detalle li { margin-bottom: 6px; }
+.nota { font-size: 14px; color: #646d62; }
+.carrito { max-width: 650px; margin: auto; text-align: center; padding-top: 70px; }
+.carrito h2 { margin-top: 32px; font-size: 22px; }
+footer { background: #e8eddc; padding: 36px 0 20px; }
+.footer-info { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.footer-info p { margin: 6px 0; font-size: 14px; }
+footer h2 { font-family: Georgia, serif; margin-top: 0; }
+.equipo { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.persona { display: flex; gap: 14px; align-items: center; padding: 16px; border: 1px solid #bcc9ab; border-radius: 8px; }
+.avatar { display: grid; place-items: center; width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; background: #365346; color: white; font-weight: bold; }
+.persona h4 { margin: 0 0 5px; }
+.persona p { margin: 0; font-size: 12px; }
+.copyright { font-size: 12px; margin-top: 26px; border-top: 1px solid #c4ceb8; padding-top: 18px; }
+a:focus-visible, button:focus-visible { outline: 3px solid #9b702b; outline-offset: 4px; }
+@media (max-width: 850px) { .catalogo { grid-template-columns: repeat(2, 1fr); } .hero { padding: 28px; gap: 24px; } .equipo { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .encabezado { flex-direction: column; justify-content: center; padding: 20px 0; gap: 16px; } .hero, .detalle, .beneficios, .footer-info, .catalogo { grid-template-columns: 1fr; } .hero h1 { font-size: 34px; } .hero img { max-width: 300px; margin: auto; } .hero { gap: 20px; } .seccion { padding-top: 30px; } .detalle { gap: 24px; } .tarjeta img { height: 250px; } }

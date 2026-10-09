@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nombre": "Mate de calabaza",
+    "categoria": "Mates",
+    "precio": 18500,
+    "imagen": "/images/mate.svg",
+    "descripcionCorta": "El clásico para compartir una ronda.",
+    "descripcion": "Mate de calabaza natural con virola de aluminio. Cada pieza tiene pequeñas diferencias propias del material.",
+    "caracteristicas": [
+      "Calabaza natural",
+      "Virola de aluminio",
+      "Requiere curado antes del primer uso"
+    ],
+    "stock": 12
+  },
+  {
+    "id": 2,
+    "nombre": "Mate de acero",
+    "categoria": "Mates",
+    "precio": 24000,
+    "imagen": "/images/acero.svg",
+    "descripcionCorta": "Práctico para llevar a todos lados.",
+    "descripcion": "Mate de acero inoxidable de doble pared. Una opción fácil de limpiar para el uso diario.",
+    "caracteristicas": [
+      "Acero inoxidable",
+      "Doble pared",
+      "No requiere curado"
+    ],
+    "stock": 8
+  },
+  {
+    "id": 3,
+    "nombre": "Termo de un litro",
+    "categoria": "Termos",
+    "precio": 42000,
+    "imagen": "/images/termo.svg",
+    "descripcionCorta": "Agua caliente para toda la ronda.",
+    "descripcion": "Termo de acero inoxidable con tapa y pico cebador. Su tamaño permite llevarlo al trabajo o a una salida.",
+    "caracteristicas": [
+      "Capacidad de 1 litro",
+      "Pico cebador",
+      "Cuerpo de acero inoxidable"
+    ],
+    "stock": 10
+  },
+  {
+    "id": 4,
+    "nombre": "Bombilla de acero",
+    "categoria": "Accesorios",
+    "precio": 8500,
+    "imagen": "/images/bombilla.svg",
+    "descripcionCorta": "Un accesorio que no puede faltar.",
+    "descripcion": "Bombilla de acero inoxidable con filtro tipo cuchara. Se recomienda lavar y secar después de cada uso.",
+    "caracteristicas": [
+      "Acero inoxidable",
+      "Filtro tipo cuchara",
+      "Largo de 18 cm"
+    ],
+    "stock": 20
+  },
+  {
+    "id": 5,
+    "nombre": "Yerbero de lata",
+    "categoria": "Accesorios",
+    "precio": 12000,
+    "imagen": "/images/yerbero.svg",
+    "descripcionCorta": "Guardá la yerba de forma cómoda.",
+    "descripcion": "Yerbero de lata con tapa y pico vertedor para dosificar la yerba y mantenerla guardada en un lugar seco.",
+    "caracteristicas": [
+      "Capacidad aproximada de 500 g",
+      "Pico vertedor",
+      "Tapa desmontable"
+    ],
+    "stock": 15
+  },
+  {
+    "id": 6,
+    "nombre": "Mate de cerámica",
+    "categoria": "Mates",
+    "precio": 16000,
+    "imagen": "/images/ceramica.svg",
+    "descripcionCorta": "Simple, cómodo y fácil de limpiar.",
+    "descripcion": "Mate de cerámica esmaltada con base estable. Ideal para tener en casa y preparar una ronda sin curado previo.",
+    "caracteristicas": [
+      "Cerámica esmaltada",
+      "Base estable",
+      "No requiere curado"
+    ],
+    "stock": 9
+  }
+]
