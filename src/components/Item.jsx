@@ -1,3 +1,4 @@
+import { Agregar } from '../context/Carrito';
 import { Link } from 'react-router-dom';
 
 export default function Item({ producto }) {
@@ -9,6 +10,7 @@ export default function Item({ producto }) {
         <h2>{producto.nombre}</h2>
         <p>{producto.descripcionCorta}</p>
         <strong className="precio">{producto.precio.toLocaleString('es-AR', { style: 'currency', currency: 'ARS', maximumFractionDigits: 0 })}</strong>
+        <Agregar producto={producto} />
         <Link className="boton secundario" to={`/producto/${producto.id}`}>Ver detalle</Link>
       </div>
     </article>

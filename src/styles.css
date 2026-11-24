@@ -59,3 +59,9 @@ footer h2 { font-family: Georgia, serif; margin-top: 0; }
 a:focus-visible, button:focus-visible { outline: 3px solid #9b702b; outline-offset: 4px; }
 @media (max-width: 850px) { .catalogo { grid-template-columns: repeat(2, 1fr); } .hero { padding: 28px; gap: 24px; } .equipo { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .encabezado { flex-direction: column; justify-content: center; padding: 20px 0; gap: 16px; } .hero, .detalle, .beneficios, .footer-info, .catalogo { grid-template-columns: 1fr; } .hero h1 { font-size: 34px; } .hero img { max-width: 300px; margin: auto; } .hero { gap: 20px; } .seccion { padding-top: 30px; } .detalle { gap: 24px; } .tarjeta img { height: 250px; } }
+
+form { display: grid; gap: 1rem; max-width: 32rem; margin-bottom: 1rem; }
+label { display: grid; gap: .3rem; }
+input { padding: .45rem; }
+nav { flex-wrap: wrap; }
+button:disabled { opacity: .65; }
