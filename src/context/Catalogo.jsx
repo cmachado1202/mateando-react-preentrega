@@ -12,7 +12,7 @@ export function CatalogoProvider({ children }) {
     function fallo() { setError('No se pudo cargar el catálogo. Revisá la conexión.'); setCargando(false); }
     if (db) return onSnapshot(collection(db, 'productos'), snap => listo(snap.docs.map(doc => ({ ...doc.data(), id: doc.id }))), fallo);
     const controller = new AbortController();
-    fetch('/productos.json', { signal: controller.signal }).then(r => {
+    fetch(import.meta.env.BASE_URL + 'productos.json', { signal: controller.signal }).then(r => {
       if (!r.ok) throw new Error();
       return r.json();
     }).then(listo).catch(e => { if (e.name !== 'AbortError') fallo(); });
